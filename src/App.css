@@ -1,0 +1,46 @@
+*{
+    font-family: 'Mulish', sans-serif;
+}
+
+/* For Client Rating */
+.checked {
+    color: rgb(255, 227, 49);
+  }
+
+  .md\:h-20{
+    margin-top:1rem;
+  }
+
+/* for seller-form */
+.seller-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.seller-form label {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.seller-form input {
+  padding: 10px;
+  margin: 5px 0 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.seller-form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.seller-form button:hover {
+  background-color: #45a049;
+}

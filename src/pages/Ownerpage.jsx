@@ -7,9 +7,9 @@ import Footer from '../components/Footer';
 function Ownerpage() {
     return (
       <>
-      <NavBar/>
+      {/* <NavBar/> */}
       <Owner/>
-      <Footer/>
+      {/* <Footer/> */}
       </>
     )
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from 'react';
-// import fs from 'fs';
+import jsonData from './../data.json';
+// import {fs} from 'fs';
 
 function Owner() {
   const [sellerId, setSellerId] = useState('');
@@ -8,28 +9,34 @@ function Owner() {
   const [domain, setDomain] = useState('');
   const [sellerType, setSellerType] = useState('');
 
-  // const handleSubmit = (event) => {
-  //   event.preventDefault();
-    // You can perform validation and submit the form data to the server here
-    // const OwnerData = { sellerId, name, domain, sellerType };
+  function actionclick(){
+    let sellerData =  {
+          sellerId,
+          name,
+          domain,
+          sellerType
+        }
+        if(sellerId && name && domain && sellerType){
+          jsonData.sellers.push(sellerData);
+          // fileWriter(jsonData);
+        }else{
+          alert("All fields are mandatory")
+        }
 
-    // // Write the form data to the seller_out.json file
-    // fs.writeFile('seller_out.json', JSON.stringify(sellerData), (error) => {
-    //   if (error) {
-    //     console.log('Error writing seller data:', error);
-    //   } else {
-    //     console.log('Seller data written successfully.');
-    //   }
-    // });
-  // };
-  // seller=[
-  //   {
-  //     sellerId:'1234',
-  //     name:geo,
-  //     domain:xyx.com,
-  //     sellerType:publisher
+
+    console.log(jsonData)
+
+  }
+
+  // function fileWriter(updatedData){
+  //   fs.writeFile('./data.json', JSON.stringify(updatedData), (err) => {
+  //   if (err) {
+  //     console.log('Error writing file:', err);
+  //   } else {
+  //     console.log('File updated successfully');
   //   }
-  // ]
+  // });
+  // }
 
   return (
     <>
@@ -71,7 +78,7 @@ function Owner() {
           onChange={(event) => setSellerType(event.target.value)}
         />
       </div>
-      <button type="submit" onClick="actionclick()" >Submit</button>
+      <button type="button" onClick={()=>actionclick()} >Submit</button>
     </form>
     </div>
     
@@ -79,12 +86,7 @@ function Owner() {
     
     
   );
-  // onsubmit() {
-  // console.log('thankyou');
-  //  }
-  function actionclick(){
-    alert ('thank you');
-  }
+ 
 }
 
 export default Owner;

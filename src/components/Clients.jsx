@@ -1,9 +1,22 @@
-import React from 'react'
-let data = require('../data.json'); 
-
-
+import React, { useEffect, useState } from 'react'
+// let data = require('../data.json'); 
+import axios from 'axios';
 function Clients() {
+    var [data, setdata] = useState('');
 
+    useEffect(()=>{
+        getJsonData().then((resp)=>{
+            setdata(resp.data)
+            console.log(data)
+        })
+    },[])
+
+    function getJsonData(){
+        let url="form_OO/Owner_form.php";
+        axios.defaults.baseURL = 'https://www.skillskapes.com/';
+        axios.defaults.headers.common['Content-Type'] ='application/json;charset=utf-8';
+        return axios.get(url)
+    }
     // const DisplayData = data.sellers.map(
     //     (sellers)=>{
     //         return(

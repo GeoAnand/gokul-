@@ -13,7 +13,7 @@ function NavBar() {
         <div className="flex flex-col md:flex-row  justify-between mt-1">
 
           <div className='flex justify-between m-3 md:m-0'>
-            <img src="./assets/LOGO-updated.png" alt="" className="md:h-20 h-14 md:ml-14 " />
+            <img src="./assets/LOGO-updated_new.png" alt="" className="md:h-20 h-14 md:ml-14 " />
 
             <div className="md:hidden flex items-center">
                               <button

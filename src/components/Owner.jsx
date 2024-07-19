@@ -128,14 +128,14 @@ function Owner() {
     <div class="owner_form">
     <div class="container form">
         <div class="brand-logo"></div>
-        <div class="brand-title">Ookamimedia</div>
+        <div class="brand-title">The <br></br>Jungle Technology</div>
         <div class="inputs">
           <label>Seller ID</label>
           <input type="text" id="sellerId"
               value={sellerId} onChange={(event) => setSellerId(event.target.value)} placeholder="2222" />
           <label>Name</label>
           <input type="text" id="name"
-              value={name} onChange={(event) => setName(event.target.value)} placeholder="WM -" />
+              value={name} onChange={(event) => setName(event.target.value)} placeholder="Name" />
           <label>Domain</label>
           <input type="text" id="domain"
               value={domain} onChange={(event) => setDomain(event.target.value)} placeholder="example.com" />

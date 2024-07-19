@@ -13,7 +13,7 @@ function Clients() {
 
     function getJsonData(){
         let url="form_OO/Owner_form.php";
-        // axios.defaults.baseURL = 'https://www.skillskapes.com/'; needs to be activated for the Form (Sellers data)
+        axios.defaults.baseURL = 'https://www.skillskapes.com/'; // needs to be activated for the Form (Sellers data)
         axios.defaults.headers.common['Content-Type'] ='application/json;charset=utf-8';
         return axios.get(url)
     }

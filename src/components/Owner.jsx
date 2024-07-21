@@ -46,6 +46,10 @@ function Owner() {
           setName('')
           setDomain('')
           setSellerType('')
+          console.log("Form submitted successfully, reloading the page...");
+          setTimeout(() => {
+          window.location.reload();
+        }, 500); // 500 milliseconds delay
         }
       })
 

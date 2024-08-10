@@ -72,7 +72,7 @@ function Footer() {
             <div id='contact' className='md:mx-3 text-center md:text-left'>
                 <h1 className='text-4xl font-medium my-3 text-primary'>Contact Information</h1>
           
-                <p className='my-2 text-lg' >Email : sales@ookamimedia.com</p>
+                <a href="mailto:sales@thejungletechnology.com" className='my-2 text-lg' >Email : sales@thejungletechnology.com</a>
                 
                 
                 {/* Google Form */}

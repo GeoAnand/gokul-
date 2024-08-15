@@ -9,6 +9,7 @@ import Publisher from './pages/Publisher';
 import Contactpage from './pages/Contactpage';
 import Aboutus from './pages/Aboutus';
 import Services from './pages/Services';
+import Blog from './pages/Blog';
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
         <Route path="Contact" element={<Contactpage />} />
         <Route path="Aboutus" element={<Aboutus />} />
         <Route path="Our-Services" element={<Services />} />
-
+        <Route path='Our-Blogs' element={<Blog />}/>
       </Routes>
     </div>
   );

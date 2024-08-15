@@ -63,7 +63,7 @@ function NavBar() {
             <li className='mx-3 my-3 md:my-0' > <a className='font-medium hover:text-primary text-3xl md:text-lg' href="/advertiser" >Advertiser</a> </li>
             <li className='mx-3 my-3 md:my-0' > <a className='font-medium hover:text-primary text-3xl md:text-lg' href="/publisher" >Publisher</a> </li>
             <li className='mx-3 my-3 md:my-0' > <a className='font-medium hover:text-primary text-3xl md:text-lg flex' href="/Our-Services"  >Services </a> </li>
-            <li className='mx-3 my-3 md:my-0' > <a className='font-medium hover:text-primary text-3xl md:text-lg flex' href="#blog"  >Blog </a> </li>
+            <li className='mx-3 my-3 md:my-0' > <a className='font-medium hover:text-primary text-3xl md:text-lg flex' href="/Our-Blogs"  >Blog </a> </li>
             <li className='mx-3 my-3 md:my-0' > <a className='font-medium hover:text-primary text-3xl md:text-lg' href="#contact" >Contact</a> </li>
 
           </ul>
